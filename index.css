@@ -4,13 +4,18 @@
 
 }
 
+.landingOverlay{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .landing{
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url(img/landingBk.jpg);
+  background-image:url(img/landing.jpg);
+
 }
 
 .heading{
@@ -21,44 +26,21 @@
 
 .heading h1{
   text-transform: uppercase;
-  color:orange;
+  color:cyan;
 }
 
-li{
-  float: right;
-  list-style-type: none;
-  text-align: center;
-}
-
-li a{
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 40px;
-    padding: 7px;
-    color: lightgrey;
-
-    }
-
-li a:hover{
-  border: 1.5px solid orange;
-}
-
-li a:active{
-  border: 1px solid orange;
-}
-
-    .line-1{
-      color: lightgray;
-      position: relative;
-      top: 40%;
-      width: 24em;
-      margin: 0 auto;
-      border-right: 2px solid orange;
-      font-size: 250%;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      transform: translateY(-50%);
+.line-1{
+    color: lightgray;
+    position: relative;
+    top: 40%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid orange;
+    font-size: 250%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
   }
 
   /* Animation */
@@ -71,6 +53,30 @@ li a:active{
     to{width: 13em;}
   }
   @keyframes blinkTextCursor{
-    from{border-right-color: orange;}
+    from{border-right-color: cyan;}
     to{border-right-color: transparent;}
+  }
+
+  .intro h2{
+    padding-top: 10%;
+    color: lightcyan;
+  }
+
+  #intro{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    height: 450px;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .about{
+    left: 7%;
+  }
+  .projects{
+    left: 37%;
+  }
+  .social{
+    left: 67%;
   }
