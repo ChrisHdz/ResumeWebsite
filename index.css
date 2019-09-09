@@ -1,0 +1,76 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 20;
+
+}
+
+.landing{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(img/landingBk.jpg);
+}
+
+.heading{
+  line-height: 20px;
+  padding-top: 2px;
+  color: lightgrey;
+}
+
+.heading h1{
+  text-transform: uppercase;
+  color:orange;
+}
+
+li{
+  float: right;
+  list-style-type: none;
+  text-align: center;
+}
+
+li a{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 40px;
+    padding: 7px;
+    color: lightgrey;
+
+    }
+
+li a:hover{
+  border: 1.5px solid orange;
+}
+
+li a:active{
+  border: 1px solid orange;
+}
+
+    .line-1{
+      color: lightgray;
+      position: relative;
+      top: 40%;
+      width: 24em;
+      margin: 0 auto;
+      border-right: 2px solid orange;
+      font-size: 250%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+  }
+
+  /* Animation */
+  .anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 13em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: orange;}
+    to{border-right-color: transparent;}
+  }
