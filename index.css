@@ -4,10 +4,6 @@
 
 }
 
-.landingOverlay{
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 .landing{
   position: absolute;
   width: 100%;
@@ -18,6 +14,16 @@
 
 }
 
+  #title{
+    display: inline;
+  }
+
+  .heading img{
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 10px;
+  }
+
 .heading{
   line-height: 20px;
   padding-top: 2px;
@@ -25,8 +31,17 @@
 }
 
 .heading h1{
+  position: absolute;
+  top: 5px;
+  left: 30px;
   text-transform: uppercase;
   color:cyan;
+}
+
+.heading h4{
+  position: absolute;
+  top: 7%;
+  left: 1%;
 }
 
 .line-1{
@@ -58,25 +73,43 @@
   }
 
   .intro h2{
-    padding-top: 10%;
+    padding-top: 50%;
     color: lightcyan;
   }
 
   #intro{
     position: absolute;
-    top: 30%;
+    top: 27%;
     text-align: center;
     height: 450px;
     width: 25%;
     background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  #intro:hover{
+    opacity: .8;
+  }
+
+  #intro:hover h2{
+    padding-top: 15%;
+    color: cyan;
+  }
+
+  #intro:hover h4{
+    padding-top: 20%;
+    margin: 10px 20px 10px 20px;
+    color: lightcyan;
   }
 
   .about{
     left: 7%;
   }
+
   .projects{
     left: 37%;
   }
+
   .social{
     left: 67%;
   }
